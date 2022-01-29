@@ -54,4 +54,4 @@ while True:
     temp += random.randrange(-2, 2)
     humi += random.randrange(-1, 1)
     client.publish('v1/devices/me/telemetry', json.dumps(collect_data), 1)
-    time.sleep(5)
+    time.sleep(10)
